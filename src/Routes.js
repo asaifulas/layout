@@ -1,6 +1,8 @@
-import { Dashboard } from '@mui/icons-material';
-import React from 'react'
+import { Dashboard, Support, SupportAgent, TableChart, Warning } from '@mui/icons-material';
+import ContactUs from './components/pages/contactUs';
 import Home from './components/pages/home'
+import DeviceData from './components/pages/table';
+import Test from './components/pages/test';
 
 const Routes = [
     {
@@ -10,6 +12,30 @@ const Routes = [
         icon: <Dashboard/>,
         route: "/home",
         component: <Home/>
+    },
+    {
+        type: "collapse",
+        name: "Test",
+        key: "test",
+        icon: <Warning/>,
+        route: "/test",
+        component: <Test/>
+    },
+    {
+        type: "collapse",
+        name: "Device List",
+        key: "device",
+        icon: <TableChart/>,
+        route: "/devices",
+        component: <DeviceData/>
+    },
+    {
+        type: "collapse",
+        name: "Contact Us",
+        key: "contact",
+        icon: <SupportAgent/>,
+        route: "/contact-us",
+        component: <ContactUs/>
     }
 ];
 
