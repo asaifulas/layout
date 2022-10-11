@@ -1,7 +1,7 @@
 import MuiAppBar from '@mui/material/AppBar';
 import SideBar from '../layouts/SideBar'
 import { Box, createTheme, CssBaseline, IconButton, styled, ThemeProvider, Toolbar, Tooltip, Typography } from '@mui/material';
-import { useContext, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Brightness4, Brightness7, Home, Menu } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 

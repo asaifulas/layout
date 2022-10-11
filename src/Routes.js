@@ -1,8 +1,7 @@
-import { Dashboard, Support, SupportAgent, TableChart, Warning } from '@mui/icons-material';
+import { Dashboard, SupportAgent, TableChart } from '@mui/icons-material';
 import ContactUs from './components/pages/contactUs';
 import Home from './components/pages/home'
 import DeviceData from './components/pages/table';
-import Test from './components/pages/Dashboard';
 
 const Routes = [
     {
