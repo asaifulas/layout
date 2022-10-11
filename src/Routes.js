@@ -2,7 +2,7 @@ import { Dashboard, Support, SupportAgent, TableChart, Warning } from '@mui/icon
 import ContactUs from './components/pages/contactUs';
 import Home from './components/pages/home'
 import DeviceData from './components/pages/table';
-import Test from './components/pages/test';
+import Test from './components/pages/Dashboard';
 
 const Routes = [
     {
@@ -12,14 +12,6 @@ const Routes = [
         icon: <Dashboard/>,
         route: "/home",
         component: <Home/>
-    },
-    {
-        type: "collapse",
-        name: "Test",
-        key: "test",
-        icon: <Warning/>,
-        route: "/test",
-        component: <Test/>
     },
     {
         type: "collapse",

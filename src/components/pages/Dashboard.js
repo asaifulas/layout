@@ -1,7 +1,7 @@
 import MuiAppBar from '@mui/material/AppBar';
 import SideBar from '../layouts/SideBar'
 import { Box, createTheme, CssBaseline, IconButton, styled, ThemeProvider, Toolbar, Tooltip, Typography } from '@mui/material';
-import { useMemo, useState } from 'react';
+import { useContext, useMemo, useState } from 'react';
 import { Brightness4, Brightness7, Home, Menu } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 
@@ -27,7 +27,7 @@ const AppBar = styled(MuiAppBar, {
 }));
 
 
-const Test = () => {
+const Dashboard = () => {
   const [open, setOpen] = useState(false);
   const [dark, setDark] = useState(true)
 
@@ -77,4 +77,4 @@ const Test = () => {
   );
 }
 
-export default Test
+export default Dashboard
