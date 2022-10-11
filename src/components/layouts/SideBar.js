@@ -75,6 +75,7 @@ const SideBar = ({open, setOpen}) => {
                   justifyContent: open ? 'initial' : 'center',
                   px: 2.5,
                 }}
+                selected={window.location.pathname === route.route}
               >
                 <ListItemIcon
                   sx={{
